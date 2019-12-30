@@ -3,6 +3,7 @@
     <Header/>
     <About/>
     <Projects/>
+    <Activities/>
     <Footer/>
   </div>
 </template>
@@ -18,6 +19,7 @@ import Header from './components/header.vue'
 import Footer from './components/footer.vue'
 import About from './components/about_me_short.vue'
 import Projects from './components/projects.vue'
+import Activities from './components/activites.vue'
 
 Vue.use(BootstrapVue)
 
@@ -27,6 +29,7 @@ export default {
     Header,
     About,
     Projects,
+    Activities,
     Footer
   }
 }

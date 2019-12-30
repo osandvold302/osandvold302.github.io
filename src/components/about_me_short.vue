@@ -3,7 +3,7 @@
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <b-row class="justfiy-content-md-center text-center">
         <b-col class="col-text text-left" offset="1" sm="5">
-            <h1>Hello,</h1>
+            <h1>Hi,</h1>
             <h1>I'm Olivia</h1>
             <h6>
                 Senior at the University of Iowa studying Biomedical Engineering with focus in bioimaging, computer science, and mathematics.
@@ -11,7 +11,7 @@
                 Lover of hackathons, the computer science and engineering community, and exploring the world one step at a time
             </h6>
             <h5>
-                oh, and I'm <i>obsessed</i> with learning
+                oh, and I'm <i>obsessed</i> with the pursuit of knowledge
             </h5>
         </b-col>
         <b-col class="col-photo">

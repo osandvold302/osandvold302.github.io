@@ -4,7 +4,7 @@
         <b-navbar-toggle class="ml-auto navbar-light" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="navbar-nav ml-auto text-center">
-            <!--<b-nav-item :href="getPathOfEnv()">About</b-nav-item>-->
+            <b-nav-item :href="getPathOfEnv()">About</b-nav-item>
             <!--<b-nav-item :href="getPathOfEnv()">Projects</b-nav-item>-->
             <b-nav-item href="https://github.com/osandvold302/personal-website/blob/master/olivia_sandvold_resume.pdf">Resume</b-nav-item>
           </b-navbar-nav>
@@ -23,7 +23,7 @@ export default {
   components: {},
   methods: {
     getPathOfEnv () {
-      return process.env.NODE_ENV === 'production' ? '/' : '/'
+      return process.env.NODE_ENV === 'production' ? '/' : '/test'
     }
   }
 }

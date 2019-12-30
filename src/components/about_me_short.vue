@@ -6,7 +6,7 @@
             <h1>Hello,</h1>
             <h1>I'm Olivia</h1>
             <h6>
-                Senior at the University of Iowa studying Biomedical Engineering with focuses in bioimaging, computer science, and mathematics.
+                Senior at the University of Iowa studying Biomedical Engineering with focus in bioimaging, computer science, and mathematics.
             <br><br>
                 Lover of hackathons, the computer science and engineering community, and exploring the world one step at a time
             </h6>
@@ -39,6 +39,8 @@ export default {
     padding-top: 50px;
     padding-bottom: 50px;
     flex-wrap: wrap;
+    min-height: 400px;
+    background-image: url("../assets/background-st-andrews.jpg")
 }
 
 .b-col {
@@ -48,7 +50,7 @@ export default {
 }
 
 h6 {
-    color: #4b535e;
+    color: #27292b;
     padding-bottom: 20px;
 }
 

@@ -6,7 +6,7 @@
         crossorigin="anonymous"> 
         <b-row>
             <b-col class="col-text text-left" offset="1">
-                <h2>Projects</h2>
+                <h2>Featured Projects</h2>
             </b-col>
         </b-row>
         <template v-for="project in projects" id="project-section">

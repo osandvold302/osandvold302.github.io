@@ -27,7 +27,7 @@ export default {
     Header,
     About,
     Projects,
-    Footer,
+    Footer
   }
 }
 </script>
@@ -40,7 +40,7 @@ html , body{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+ 
   margin: 0 auto;
   padding: 0;
   width: 100%;

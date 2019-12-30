@@ -27,32 +27,32 @@ export default {
       activities: [
         {
           name: 'Climbing',
-          img: 'logo.png',
+          img: 'climbing.jpg',
           description: ''
         },
         {
           name: 'Traveling',
-          img: 'me.jpg',
+          img: 'travel.jpg',
           description: ''
         },
         {
           name: 'Hackathons',
-          img: 'me.jpg',
+          img: 'hacking.jpg',
           description: ''
         },
         {
           name: 'Volunteering',
-          img: 'me.jpg',
+          img: 'volunteer.jpg',
           description: ''
         },
         {
-          name: 'Honors Peer Mentor',
-          img: 'me.jpg',
+          name: 'Golf',
+          img: 'golf.jpg',
           description: ''
         },
         {
           name: 'Baking',
-          img: 'me.jpg',
+          img: 'pavlova.jpg',
           description: ''
         }
       ]
@@ -77,12 +77,15 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 1rem;
   max-width: 80rem;
-  margin: 20px auto;
+  margin: auto;
   padding: 0 5rem;
 }
 
 .activity {
-  max-height: 400px;
+  max-height: 500px;
+  min-width: 250px;
+  width: auto;
+  height: auto;
   object-fit: cover;
   border-radius: 0.75rem;
   padding: 5px;

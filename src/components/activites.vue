@@ -7,7 +7,12 @@
     </b-row>
     <b-col class="activity-section">
       <template v-for="(activity,index) in activities">
-      <img class="activity" v-bind:key="index" v-bind:src="getImgUrl(activity.img)"/>
+      <b-col class="img-container align-self-center justify-content-md-center" v-bind:key="index+'contain'">
+        <img class="activity" v-bind:key="index" v-bind:src="getImgUrl(activity.img)"/>
+        <div class="overlay" v-bind:key="activity.description">
+          {{ activity.description }}
+        </div>
+      </b-col>
       </template>
     </b-col>
   </div>
@@ -28,32 +33,32 @@ export default {
         {
           name: 'Climbing',
           img: 'climbing.jpg',
-          description: ''
+          description: 'I started climbing in 2018 and have continued to boulder and top rope every week! Next semester I will be taking an Intermediate Climbing course and I\'m excited to see what new heights I\'ll reach!'
         },
         {
           name: 'Traveling',
           img: 'travel.jpg',
-          description: ''
+          description: 'In spring 2019 I had the opportunity to study abroad in Glasgow, Scotland. I traveled to many more countries and loved seeing the different architectures, sampling the local cuisine, and meeting people from diverse cultures. I am continuing to travel throughout the United States on the road and through the air.'
         },
         {
           name: 'Hackathons',
           img: 'hacking.jpg',
-          description: ''
+          description: 'Without hackathons, I\'m not sure where I would be today. From Missouri to the Netherlands, I have taken advantage of creative challenges and expanded my skills as a developer, business woman, and public speaker.'
         },
         {
           name: 'Volunteering',
           img: 'volunteer.jpg',
-          description: ''
+          description: 'For over two years, I have been a volunteer at the University of Iowa Hospitals and Clinics in the Child Psych inpatient unit. Each week I spend several hours tutoring students and helping them develop and maintain positive lifestyle behaviors and attitudes.'
         },
         {
           name: 'Golf',
           img: 'golf.jpg',
-          description: ''
+          description: 'Though not a very good golfer, I do find time to dust off my 9-iron and play a round or two each summer. I also like to spend the summer and fall biking on the beautiful Iowa trails.'
         },
         {
           name: 'Baking',
           img: 'pavlova.jpg',
-          description: ''
+          description: 'Baking pies and sweet treats has always been a passion of mine. Getting into the Great British Bake-Off certainly did not quell that dream inside of me to be a grand French pâtissière. Ah well, I\'ll continue to dream.'
         }
       ]
     }
@@ -72,6 +77,10 @@ export default {
   padding-top: 12px;
 }
 
+.img-container {
+  position: relative;
+}
+
 .activity-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
@@ -83,12 +92,34 @@ export default {
 
 .activity {
   max-height: 450px;
-  min-width: 225px;
   width: auto;
   height: auto;
   object-fit: cover;
   border-radius: 1rem;
   padding: 10px;
 }
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  padding: 10px
+}
 
+/* When you mouse over the container, fade in the overlay title */
+.img-container:hover .overlay {
+  opacity: 1;
+}
 </style>

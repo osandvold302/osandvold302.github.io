@@ -10,9 +10,18 @@
             <br><br>
                 Lover of hackathons, the computer science and engineering community, and exploring the world one step at a time
             </h6>
+            <br>
             <h5>
-                oh, and I'm <i>obsessed</i> with the pursuit of knowledge
+                <i>vo·ra·cious</i>
             </h5>
+            <h6>/vəˈrāSHəs/</h6>
+            <h6><b>adjective</b></h6>
+            <h6>
+                    1. wanting or devouring great quantities of food
+            </h6>
+            <h6>
+                    2. excessively avid or eager
+            </h6>
         </b-col>
         <b-col class="col-photo">
            <img src="../assets/me.jpg" height="350"/>
@@ -51,7 +60,6 @@ export default {
 
 h6 {
     color: #27292b;
-    padding-bottom: 20px;
 }
 
 .col-text {

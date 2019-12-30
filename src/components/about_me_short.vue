@@ -66,4 +66,8 @@ h6 {
 .col-photo img:hover {
     transform: translate3d(2px, 2px, 2px);
 }
+
+img {
+    border-radius: 0.75rem;
+}
 </style>

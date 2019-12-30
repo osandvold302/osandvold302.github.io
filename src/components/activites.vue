@@ -82,13 +82,13 @@ export default {
 }
 
 .activity {
-  max-height: 500px;
-  min-width: 250px;
+  max-height: 450px;
+  min-width: 225px;
   width: auto;
   height: auto;
   object-fit: cover;
-  border-radius: 0.75rem;
-  padding: 5px;
+  border-radius: 1rem;
+  padding: 10px;
 }
 
 </style>

@@ -113,6 +113,7 @@ export default {
 .project-rows #project-summary {
     background-color: rgba(115,121,146,.1);
     transition: all ease 0.5s;
+    border-radius: .5rem;
 }
 
 .project-rows #project-summary:hover{
@@ -133,7 +134,8 @@ export default {
     width: 100%;
     opacity: 0;
     transition: ease 0.5s;
-    background-color: rgba(115,121,146,.25); 
+    background-color: rgba(115,121,146,.25);
+    border-radius: .5rem; 
 }
 
 #project-image {

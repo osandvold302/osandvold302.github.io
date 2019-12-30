@@ -98,8 +98,17 @@ export default {
 
 #project-summary {
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.project-rows {
+    overflow: hidden;
+}
+
+#project-image {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
 .project-rows #project-summary {
@@ -125,18 +134,23 @@ export default {
     width: 100%;
     opacity: 0;
     transition: ease 0.5s;
-    background-color: rgba(115,121,146,.1); 
+    background-color: rgba(115,121,146,.25); 
+}
+
+#project-image {
+    height: 100%;
+    min-height: 100%;
 }
 
 #project-image:hover .overlay {
     opacity: 1;
+    height: 100%;
 }
 
 .icon {
     color: white;
     position: absolute;
-    top: 35%;
-    bottom: 65%;
+    top: 125px;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;

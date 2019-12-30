@@ -20,7 +20,7 @@
                     </a>
                 </div>
             </b-col>
-            <b-col id="project-summary" class="col-text text-left" lg="8" md="6" sm="auto">
+            <b-col id="project-summary" class="col-text text-left align-self-end" lg="8" md="6" sm="auto">
                 <b-row align-v="start">
                     <h4>{{ project.title }}</h4>
                     <p>{{ project.summary }}</p>
@@ -164,19 +164,19 @@ export default {
 }
 
 .btn-outline-info {
-    color: #6a839c;
-    border-color: #6a839c;
+    color: #5D83C2;
+    border-color: #5D83C2;
 }
 
 .btn-outline-info:hover {
     color: #fff;
-    background-color: #6a839c;
-    border-color: #6a839c;
+    background-color: #5D83C2;
+    border-color: #5D83C2;
 }
 
 .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
     color: #fff;
-    background-color: #6a839c;
-    border-color: #6a839c;
+    background-color: #5D83C2;
+    border-color: #5D83C2;
 }
 </style>

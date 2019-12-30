@@ -1,7 +1,7 @@
 <template>
     <div b-container class="container-about">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-    <b-row class="justfiy-content-md-center text-center">
+    <b-row class="justfiy-content-md-center text-center self-align-center">
         <b-col class="col-text text-left" offset="1" sm="5">
             <h1>Hi,</h1>
             <h1>I'm Olivia</h1>
@@ -23,7 +23,7 @@
                     2. excessively avid or eager
             </h6>
         </b-col>
-        <b-col class="col-photo">
+        <b-col class="col-photo self-align-center">
            <img src="../assets/me.jpg" height="350"/>
         </b-col>
     </b-row>
@@ -77,5 +77,7 @@ h6 {
 
 img {
     border-radius: 0.75rem;
+    position: relative;
+    top: 10%;
 }
 </style>

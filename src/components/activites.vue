@@ -98,7 +98,7 @@ export default {
   border-radius: 1rem;
   padding: 10px;
 }
-/* The overlay effect - lays on top of the container and over the image */
+
 .overlay {
   position: absolute;
   bottom: 10px;

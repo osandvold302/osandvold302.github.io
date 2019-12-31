@@ -50,4 +50,10 @@ html , body{
   height: 100%;
   background-color: #fffcfe;
 }
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 6px 6px -6px #4b535e;
+	   -moz-box-shadow: 0 6px 6px -6px #4b535e;
+	        box-shadow: 0 6px 6px -6px #4b535e;
+}
 </style>

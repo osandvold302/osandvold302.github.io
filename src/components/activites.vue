@@ -69,6 +69,9 @@ export default {
 <style scoped>
 
 .container-activities {
+  border-top-width: .5px;
+  border-top-color: #4b535e;
+  border-top-style: solid;
   background-image: linear-gradient(to bottom right, #A3CCFA, #5D83C2);
   padding-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 <template>
-    <div b-container class="container-about">
+    <div b-container class="container-about one-edge-shadow">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <b-row class="justfiy-content-md-center text-center self-align-center">
         <b-col class="col-text text-left" offset="1" sm="5">

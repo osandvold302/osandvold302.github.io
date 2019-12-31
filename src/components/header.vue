@@ -1,5 +1,5 @@
 <template>
-    <div class="header-navbar">
+    <div class="header-navbar fixed-top one-edge-shadow">
         <b-navbar id="navbar" toggleable="lg" type="light" variant="light">
         <b-navbar-toggle class="ml-auto navbar-light" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -49,4 +49,5 @@ export default {
 .b-nav-item {
   color:#737992;
 }
+
 </style>

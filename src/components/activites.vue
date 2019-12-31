@@ -5,7 +5,7 @@
         <h2>Past and Present Activities</h2>
       </b-col>
     </b-row>
-    <b-col class="activity-section">
+    <b-col class="activity-section col-centered">
       <template v-for="(activity,index) in activities">
       <b-col class="img-container align-self-center justify-content-md-center" v-bind:key="index+'contain'">
         <img class="activity" v-bind:key="index" v-bind:src="getImgUrl(activity.img)"/>
@@ -86,22 +86,23 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 1rem;
   max-width: 80rem;
-  margin: auto;
-  padding: 0 5rem;
+  float: none;
+  margin: 0 auto;
 }
 
 .activity {
-  max-height: 450px;
+  max-width: 100%;
   width: auto;
   height: auto;
   object-fit: cover;
   border-radius: 1rem;
   padding: 10px;
+  text-align: center;
 }
 
 .overlay {
   position: absolute;
-  bottom: 10px;
+  bottom: 1%;
   background: rgba(0, 0, 0, 0.8);
   color: #f1f1f1;
   width: 100%;
@@ -109,7 +110,7 @@ export default {
   opacity:0;
   color: white;
   font-size: 14px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   width: auto;
   height: auto;

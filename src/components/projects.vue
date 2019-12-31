@@ -20,7 +20,7 @@
                     </a>
                 </div>
             </b-col>
-            <b-col id="project-summary" class="col-text text-left align-self-end" lg="8" md="6" sm="auto">
+            <b-col id="project-summary" class="col-text text-left" lg="8" md="6" sm="auto">
                 <b-row align-v="start">
                     <h4>{{ project.title }}</h4>
                     <p>{{ project.summary }}</p>

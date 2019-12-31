@@ -25,8 +25,9 @@
                     <h4>{{ project.title }}</h4>
                     <p>{{ project.summary }}</p>
                 </b-row>
-                <b-row align-v="end" align-h="end" v-if="project.tools!=null">
-                    <div  v-for="tool in project.tools" v-bind:key="tool">
+                <div id="spacer" style="width: 100%; height: 30px; float:left; display:inline-block"></div>
+                <b-row class="tool-row justify-content-end" align-v="end" align-h="end" v-if="project.tools!=null">
+                    <div v-for="tool in project.tools" v-bind:key="tool">
                         <div id="tool-tag">
                             <b-button pill variant="outline-info" size="sm">
                                 {{ tool }} 
@@ -179,4 +180,13 @@ export default {
     background-color: #5D83C2;
     border-color: #5D83C2;
 }
+
+.tool-row {
+    width: 96%;
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    min-height: 40px;
+}
+
 </style>
